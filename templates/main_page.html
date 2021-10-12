@@ -1,0 +1,4 @@
+Главная
+{% for chn in channels %}
+  <br><a href="{% url 'channel_page' chn.name %}">{{ chn.name }}</a>
+{% endfor %}

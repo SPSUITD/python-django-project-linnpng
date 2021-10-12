@@ -1,0 +1,8 @@
+{% for msg in msgs %}
+    {{ msg.author }} - {{ msg.text }}<br>
+{% endfor %}
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_ul }}
+  <p><input type="submit"></p>
+</form>
